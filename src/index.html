@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="max-w-full overflow-x-hidden scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raiden Gun</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body
+    class="max-w-full overflow-x-hidden bg-neutral-200 dark:bg-neutral-900 dark:text-slate-100"
+  >
+    <header class="bg-rose-600 sticky text-white">
+      <!-- Flex Container -->
+      <section
+        class="max-w-5xl mx-auto flex justify-between py-4 px-5 items-center"
+      >
+        <!-- logo -->
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img class="h-10 fill-white" src="./img/gunman.svg" alt="gun man" />
+          <h1 class="text-2xl font-mono font-bold italic">Raiden Gun</h1>
+        </div>
+
+        <!-- navigation -->
+        <nav
+          aria-label="main-nav"
+          class="hidden md:flex gap-4 text-base lg:text-lg"
+        >
+          <a class="hover:text-slate-200" href="#products">Products</a>
+          <a class="hover:text-slate-200" href="#features">Features</a>
+          <a class="hover:text-slate-200" href="#testimonial">Testimonials</a>
+          <a class="hover:text-slate-200" href="#contact">Contact us</a>
+        </nav>
+
+        <!-- login & signup btn -->
+        <div class="hidden md:flex gap-1">
+          <button
+            class="border border-white py-1 px-4 rounded-lg hover:bg-rose-500 hover:text-white"
+          >
+            LOGIN
+          </button>
+          <button
+            class="border border-rose-600 text-white py-1 px-3 rounded-lg hover:bg-rose-500 hover:text-white hover:border-white"
+          >
+            SIGNUP
+          </button>
+        </div>
+
+        <!-- hamburger btn -->
+        <div class="md:hidden">
+          <button id="hamburger" class="text-3xl">&#9776;</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="max-w-5xl mx-auto p-4 mt-12 flex flex-col-reverse gap-6 md:flex-row items-center"
+      >
+        <!-- Child 1 -->
+        <div class="md:w-1/2 flex flex-col gap-6 items-center">
+          <h2
+            class="text-3xl text-center font-bold max-w-md md:text-left sm:text-5xl"
+          >
+            Welcome to
+            <span class="text-rose-500 italic">Raiden Gun</span> store
+          </h2>
+          <p class="text-2xl text-center max-w-md md:text-left">
+            We provide <em>varios type of guns</em> for any preference, any
+            time!
+          </p>
+          <button
+            class="bg-rose-600 text-white border mt-3 border-white py-2 px-16 rounded-lg md:self-start hover:bg-rose-500 hover:text-white"
+          >
+            SIGNUP
+          </button>
+        </div>
+
+        <!-- Child 2 -->
+        <img class="md:w-1/2" src="./img/RRR2.png" alt="" />
+      </section>
+
+      <hr class="w-2/3 h-1 mt-12 bg-rose-600 mx-auto" />
+
+      <!-- Products Section -->
+      <section id="products" class="max-w-5xl mx-auto p-4 mt-10">
+        <h2 class="text-3xl font-bold text-center md:text-4xl lg:text-5xl">
+          Our Pruducts
+        </h2>
+
+        <!-- Products -->
+        <div class="grid mt-12 gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">AK47</h3>
+              <img class="w-32" src="./img/ak47.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">M16</h3>
+              <img class="w-32" src="./img/m16.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">Magnum</h3>
+              <img class="w-32" src="./img/magnum.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">Machine gun</h3>
+              <img class="w-32" src="./img/mg1.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">Golden AK47</h3>
+              <img class="w-32" src="./img/g-ak.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">Machine Gun</h3>
+              <img class="w-32" src="./img/mg2.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="flex flex-col gap-4 pb-6 border border-rose-600 rounded-lg"
+          >
+            <heading
+              class="flex flex-col items-center text-white p-3 gap-3 bg-rose-500"
+            >
+              <h3 class="font-bold text-3xl">Pistol</h3>
+              <img class="w-32" src="./img/pistol.png" alt="AK47" />
+            </heading>
+            <ul class="text-xl flex flex-col gap-3 items-center md:items-left">
+              <li>✔ rating: 4/5</li>
+              <li>✔ power: 5/5</li>
+              <li>✔ range: 3/5</li>
+              <li>✔ fire rate: 3/5</li>
+              <li>✔ price: $200</li>
+            </ul>
+
+            <button
+              class="bg-rose-600 text-white border mt-3 self-center border-white py-1 px-12 rounded-lg hover:bg-rose-500 hover:text-white"
+            >
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="w-2/3 h-1 mt-12 bg-rose-600 mx-auto" />
+
+      <!-- Features Section -->
+      <section id="features" class="max-w-5xl mx-auto p-4 mt-10">
+        <h2
+          class="text-3xl font-bold mb-16 text-center md:text-4xl lg:text-5xl"
+        >
+          Our <strong class="font-bold">Premium</strong> Products
+        </h2>
+
+        <!-- Container -->
+        <div class="flex flex-col gap-16">
+          <!-- Child 1 -->
+          <div class="flex flex-col-reverse items-center gap-12 md:flex-row">
+            <div class="flex flex-col gap-2 md:w-1/2 items-center">
+              <h3 class="font-semibold text-2xl md:self-start">
+                <span class="text-rose-500">Cold</span> Weapons
+              </h3>
+              <p class="text-lg text-center md:text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ducimus, ratione delectus laborum nemo perferendis ipsum
+                reprehenderit ullam error voluptate. Perferendis doloremque
+                aliquid voluptatum earum sapiente, rerum suscipit! Quis, nam.
+              </p>
+            </div>
+            <img class="md:w-1/2" src="./img/knifes.png" alt="Knifes" />
+          </div>
+
+          <hr class="w-1/2 h-1 bg-rose-400 mx-auto" />
+
+          <!-- Child 2 -->
+          <div class="flex flex-col-reverse items-center gap-12 md:flex-row">
+            <div class="flex flex-col gap-2 md:w-1/2 items-center">
+              <h3 class="font-semibold text-2xl md:self-start">
+                Various <span class="text-rose-500">Launchers</span>
+              </h3>
+              <p class="text-lg text-center md:text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ducimus, ratione delectus laborum nemo perferendis ipsum
+                reprehenderit ullam error voluptate. Perferendis doloremque
+                aliquid voluptatum earum sapiente, rerum suscipit! Quis, nam.
+              </p>
+            </div>
+            <img class="md:w-1/2" src="./img/launcher.png" alt="Knifes" />
+          </div>
+
+          <hr class="w-1/2 h-1 mt-12 bg-rose-400 mx-auto" />
+
+          <!-- Child 3 -->
+          <div class="flex flex-col-reverse items-center gap-12 md:flex-row">
+            <div class="flex flex-col gap-2 md:w-1/2 items-center">
+              <h3 class="font-semibold text-2xl md:self-start">
+                Drop <span class="text-rose-500">Ships</span>
+              </h3>
+              <p class="text-lg text-center md:text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ducimus, ratione delectus laborum nemo perferendis ipsum
+                reprehenderit ullam error voluptate. Perferendis doloremque
+                aliquid voluptatum earum sapiente, rerum suscipit! Quis, nam.
+              </p>
+            </div>
+            <img
+              class="md:w-1/2"
+              src="./img/Pelican_Dropship.png"
+              alt="Knifes"
+            />
+          </div>
+        </div>
+      </section>
+
+      <hr class="w-2/3 h-1 mt-12 bg-rose-600 mx-auto" />
+
+      <!-- Testimonials Section -->
+      <section id="testimonial" class="max-w-5xl mx-auto p-4 mt-16">
+        <!-- Container -->
+        <div class="relative bg-rose-600 p-6 rounded-md">
+          <!-- Icon -->
+          <img
+            class="absolute w-20 bg-rose-400 translate-x-6 -translate-y-14 p-4 rounded-full"
+            src="./img/quotes.svg"
+            alt=""
+          />
+
+          <!-- Content -->
+          <div
+            class="flex flex-col items-center mt-12 gap-8 md:flex-row md:mt-0"
+          >
+            <!-- Description -->
+            <div class="flex flex-col gap-4">
+              <h2 class="font-bold text-white text-2xl">
+                What Our Customers Are Saying?
+              </h2>
+              <p class="text-white text-base">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus explicabo, vel, soluta aliquid quis maxime a illo at
+                natus nemo blanditiis, totam sit quisquam voluptatibus
+                distinctio adipisci alias qui perferendis!
+              </p>
+
+              <p class="cursor-pointer text-white text-base">View More →</p>
+            </div>
+
+            <!-- Cards -->
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- Card 1 -->
+              <div class="bg-white rounded p-4 flex flex-col gap-2">
+                <img class="bg-slate-300" src="./img/ye.png" alt="ye" />
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  delectus voluptatem itaque, voluptas et inventore aut alias
+                  earum laudantium exercitationem.
+                </p>
+                <h3 class="text-lg font-semibold">« YE »</h3>
+                <p class="italic">“Babak Limited Company„</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-white rounded p-4 flex flex-col gap-2">
+                <img class="bg-slate-300" src="./img/kevin.png" alt="ye" />
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  delectus voluptatem itaque, voluptas et inventore aut alias
+                  earum laudantium exercitationem.
+                </p>
+                <h3 class="text-lg font-semibold">« Kevin »</h3>
+                <p class="italic">“Babak Limited Company„</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white rounded p-4 flex-col gap-2 hidden lg:flex">
+                <img class="bg-slate-300" src="./img/Steve.png" alt="ye" />
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  delectus voluptatem itaque, voluptas et inventore aut alias
+                  earum laudantium exercitationem.
+                </p>
+                <h3 class="text-lg font-semibold">« Steve »</h3>
+                <p class="italic">“Babak Limited Company„</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="w-2/3 h-1 mt-12 bg-rose-600 mx-auto" />
+
+      <!-- Contact Section -->
+      <section id="contact" class="max-w-5xl mx-auto p-4 mt-10">
+        <h2
+          class="text-3xl font-bold text-center mb-16 md:text-4xl lg:text-5xl"
+        >
+          Contact Us
+        </h2>
+
+        <!-- Container -->
+        <div class="mt-8 flex flex-col items-center gap-12 md:flex-row">
+          <!-- Child 1 -->
+          <div class="flex flex-col gap-2 items-center md:w-1/2">
+            <h3 class="font-semibold text-2xl md:text-3xl lg:text-4xl">
+              Your <span class="text-rose-600">Questions</span> Will Be Answerd!
+            </h3>
+            <p class="text-lg md:text-xl lg:text-2xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+              provident perferendis laborum architecto atque quo odio quis
+              cupiditate illo fuga esse doloremque amet maiores explicabo
+              molestiae deleniti voluptatibus voluptas, pariatur nam, enim
+              neque. Itaque rem ad, sint vel in voluptatem!
+            </p>
+          </div>
+
+          <!-- Child 2 -->
+          <form
+            class="border-4 p-4 border-rose-600 rounded-md flex flex-col gap-4 md:w-1/2"
+          >
+            <h3 class="text-3xl">Let's Talk</h3>
+
+            <!-- Name -->
+            <div class="">
+              <label for="name" class="uppercase text-gray-700"> Name </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="name..."
+                class="border-2 border-rose-600 w-full rounded p-1"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="">
+              <label for="email" class="uppercase text-gray-700"> Email </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="email..."
+                class="border-2 border-rose-600 w-full rounded p-1"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="">
+              <label for="content" class="uppercase text-gray-700">
+                How Can We Help?
+              </label>
+              <textarea
+                name="content"
+                id="content"
+                placeholder="write here..."
+                class="border-2 border-rose-600 w-full rounded p-1"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <!-- Submit btn -->
+            <button
+              type="submit"
+              class="bg-rose-600 text-lg uppercase rounded-2xl py-1 self-center px-12 text-white hover:bg-rose-500"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <hr class="w-2/3 h-1 mt-12 bg-rose-600 mx-auto" />
+
+      <!-- Callout Section -->
+      <section id="callout" class="max-w-5xl mx-auto p-4 mt-10">
+        <div
+          class="flex flex-col items-center justify-between md:flex-row p-10 rounded-lg gap-6 bg-rose-500"
+        >
+          <div class="flex flex-col items-center gap-1">
+            <h2 class="font-bold text-2xl text-white">Ready to Get Started?</h2>
+            <p class="text-center text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi, adipisci.
+            </p>
+          </div>
+
+          <button
+            class="border border-white text-lg uppercase rounded-2xl py-1 self-center px-12 text-white hover:bg-rose-600"
+          >
+            Signup
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-12 bg-rose-600">
+      <!-- Footer Section -->
+      <section id="footer" class="max-w-5xl mx-auto p-4">
+        <div class="grid grid-cols-2 gap-6 justify-between md:grid-cols-4">
+          <!-- Child 1 -->
+          <div class="flex flex-col gap-1">
+            <a href="#" class="flex items-center gap-3 cursor-pointer">
+              <img
+                class="h-10 fill-white"
+                src="./img/gunman.svg"
+                alt="gun man"
+              />
+              <p class="text-2xl font-mono text-white font-bold italic">
+                Raiden Gun
+              </p>
+            </a>
+            <p class="text-white italic">Get yourself a gun right now!</p>
+          </div>
+
+          <!-- Child 2 -->
+          <nav aria-label="footer-nav">
+            <ul class="text-white text-center flex flex-col gap-1">
+              <li class="hover:text-slate-200 cursor-pointer">
+                <a href="#products">Products</a>
+              </li>
+              <li class="hover:text-slate-200 cursor-pointer">
+                <a href="#features">Features</a>
+              </li>
+              <li class="hover:text-slate-200 cursor-pointer">
+                <a href="#testimonial">Testimonials</a>
+              </li>
+              <li class="hover:text-slate-200 cursor-pointer">
+                <a href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Child 3 -->
+          <ul class="text-white text-center flex flex-col gap-1">
+            <li class="hover:text-slate-200 cursor-pointer">About Us</li>
+            <li class="hover:text-slate-200 cursor-pointer">Our Partners</li>
+            <li class="hover:text-slate-200 cursor-pointer">Work For Us</li>
+            <li class="hover:text-slate-200 cursor-pointer">Coockies</li>
+          </ul>
+
+          <!-- Child 4 -->
+          <ul class="text-white text-center flex flex-col gap-2">
+            <li class="hover:text-slate-200 cursor-pointer">📞+555 555 555</li>
+            <li class="hover:text-slate-200 cursor-pointer">
+              📮 www.random@gmail.com
+            </li>
+            <li class="hover:text-slate-200 cursor-pointer">
+              🚩 some random location
+            </li>
+          </ul>
+        </div>
+
+        <hr class="h-1 w-7/8 text-white mt-2" />
+
+        <!-- Copy & Socials -->
+        <div
+          class="flex flex-col-reverse gap-2 mt-2 items-center sm:flex-row sm:justify-between"
+        >
+          <p class="text-white text-center font-semibold">
+            2023 Raiden ZD &copy; all rights reserved
+          </p>
+          <div class="flex gap-1">
+            <img class="w-8" src="./img/ic_google.svg" alt="google" />
+            <img class="w-8" src="./img/ic_face.svg" alt="facebook" />
+            <img class="w-8" src="./img/gram.svg" alt="instagram" />
+            <img class="w-8" src="./img/ic_twitter.svg" alt="twitter" />
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
