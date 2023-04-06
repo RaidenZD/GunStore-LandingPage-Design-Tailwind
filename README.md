@@ -1,3 +1,5 @@
 # Guns-Tailwind
-In This Gun Store design I used html & tailwind.
-This project is of course responsive in all devices
+In This project I used:\
+-html 5 as the markup language.\
+-Tailwind css for styling.\
+This project is responsive in all devices.
